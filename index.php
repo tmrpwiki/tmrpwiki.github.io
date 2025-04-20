@@ -23,6 +23,7 @@
   <div class="message">
     <h1 class="display-4">🚧 Under Construction 🚧</h1>
     <p class="lead">We're working hard to bring you something awesome. Stay tuned!</p>
+      <?php include 'test.php'?>
   </div>
 </body>
 </html>
