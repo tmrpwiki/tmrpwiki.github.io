@@ -10,29 +10,33 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="JS/Misc.js"></script>
-  <script src="JS/Versions.js"></script>
 </head>
 <body>
 <div id="topbar"></div> <script> Include("topbar"); </script>
 <div id="sidebar"></div> <script> Include("sidebar"); </script>
 
-<div class="content text-center">
-  <h2>Welcome to The Minecraft Recreation Project's Wiki</h2>
-  <h4>The most accurate wiki based on actual evidence</h4>
-  <br><br><br>
-  <h4>Look for the version you're interested in on the sidebar on the left side of the page</h4>
-  <br><br><br>
-  <h5>Latest Edits:</h5> <br>
-  <h5>N/A</h5>
-  <h5>N/A</h5>
-  <h5>N/A</h5>
-  <h5>N/A</h5>
-  <h5>N/A</h5>
+<div class="content d-flex ">
+  <div class="mainHolder">
+    <h2 class="versionTitle"></h2> <br>
+    <div class="versionTagHolder"></div>
+    <div class="versionDescription"></div> <br>
+  </div>
+  <div class="sideHolder">
+    <div class="infoBox text-center">
+      <h4 class="shortVersion">Info</h4>
+      <img class="infoBoxImage" src="Resources/dirt.png"> <br><br>
+      <h6 class="releaseDate">Release Date: </h6>
+      <h6 class="remakeUpdate">Last Remake Update: </h6>
+      <h6 class="download">Download: TMRP</h6>
+      <h6 class="prevVer">Previous Version: idk</h6>
+      <h6 class="nextVer">Next Version: idk</h6>
+    </div>
+  </div>
 
-  <br><br><br>
-  <h5>Wiki created and maintained by nasko222, Otrex, minecraft12 and Christo18</h5>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/Versions.js"></script>
+  <script src="JS/Main.js"></script>
   <script src="JS/SidebarPopulator.js"></script>
 </div>
 </body>

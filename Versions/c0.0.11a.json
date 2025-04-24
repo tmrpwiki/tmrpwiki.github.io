@@ -1,0 +1,51 @@
+{
+  "shortName": "c0.0.11a",
+  "fullName": "Classic 0.0.11a",
+  "releaseDate": "May 17, 2009",
+  "remakeUpdateDate": "",
+  "mainImage": "Classic_0.0.11a_Human.jpg",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.11a.jar",
+  "versionTags": ["tmrp", "wip", "dev", "omni", "save", "dangerous", "missing", "extension"],
+  "previousVersion": "",
+  "nextVersion": "c0.0.12a",
+  "versionDescription":
+          "0.0.11a is a version of Java Edition Classic released on May 17, 2009, at 11:56 UTC, almost 4 minutes after the release of 0.0.10a, to fix the game being unplayable.<br><br>While there is a version called \"c0.0.11a\" in the launcher, it is actually an early development version of 0.0.12a; although labeled \"0.0.11a\" in-game, it contains files from May 18, 2009 (a day later than the release of this version), and has early multiplayer code present.<br><br>This is the first public version of Minecraft, posted on the TIGSource Forum labeled Minecraft (alpha).",
+  "additions": [
+
+  ],
+  "changes": [
+
+  ],
+  "fixes": [
+    "Fixed an issue with start and destroy functions making the game unplayable.",
+    "<irc> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<notch> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<code> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<social> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<spec> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<recreation> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<artificial> Fixed an issue with start and destroy functions making the game unplayable."
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["Some fuckass screenshot", "Classic_0.0.11a_Human.jpg"],
+    ["<ogscreenshot> Some fuckass screenshot", "Classic_0.0.11a_Human.jpg"],
+    ["<remakescreenshot> Some fuckass screenshot", "Classic_0.0.11a_Human.jpg"]
+  ],
+  "videos": [
+    "Fixed an issue with start and destroy functions making the game unplayable.",
+    "<irc> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<notch> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<code> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<social> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<spec> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<recreation> Fixed an issue with start and destroy functions making the game unplayable.",
+    "<artificial> Fixed an issue with start and destroy functions making the game unplayable."
+  ],
+  "trivia": [
+
+  ]
+}

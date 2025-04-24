@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php include 'Components/head.php'?>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMRP Wiki</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="JS/Misc.js"></script>
+</head>
+<body>
+<div id="topbar"></div> <script> Include("topbar"); </script>
+<div id="sidebar"></div> <script> Include("sidebar"); </script>
+
+<div class="content d-flex ">
+  <div class="mainHolder">
+    <h2 class="versionTitle">Guide: How to create a page</h2><br>
+    <div class="versionTagHolder">
+      <div class="versionTag">
+        <img src="Resources/cog.gif">
+        <div class="tagName">Work in Progress</div>
+        <div class="tagDescription">This article is still being worked on and may not contain all information.</div>
+      </div> <br>
+    </div>
+    <div class="versionDescription">
+      All version pages are based on JSON files. JSON files are used to store data. To begin creating a page, you need to make a new JSON file based on this template.
+      <div class="container my-5">
+        <h4 class="mb-3">Empty Template</h4>
+        <div class="code-container">
+          <button class="btn btn-sm btn-secondary copy-btn" onclick="copyCode()">Copy</button>
+          <pre><code class="language-json" id="codeBlock">{
+  "shortName": "",
+  "fullName": "",
+  "releaseDate": "",
+  "mainImage": "",
+  "downloadMethod": "",
+  "downloadLink": "",
+  "versionTags": [],
+  "previousVersion": "",
+  "nextVersion": "",
+  "versionDescription":
+          "",
+  "additions": [
+
+  ],
+  "changes": [
+
+  ],
+  "fixes": [
+
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+
+  ]
+}</code></pre>
+        </div>
+      </div>
+      <h4>Here's an explanation of what each thing means:</h4><br>
+      <ul class="nested">
+        <li>shortName is the short name of the version. (e.g. c0.0.11a)</li>
+        <li>fullName is the full name of the version. (e.g. Classic 0.0.11a)</li>
+        <li>releaseDate is the release date of the version. (e.g. May 17, 2009)</li>
+        <li>remakeUpdateDate is the date of the last update for this remake of the version (e.g. May 17, 2009). Leave empty if the version is not a remake.</li>
+        <li>mainImage is the name of the image used in the main info box (eg. Classic_0.0.11a_Human.jpg)</li>
+        <li>downloadMethod is either "Omni" or "TMRP" or "None"</li>
+        <li>downloadLink is the direct link to download the version. Leave empty if the version doesn't have a download</li>
+        <li>versionTags can be one of the following: "tmrp", "omni", "wip", "dev", "missing", "dangerous", "save" or "extension"</li>
+        <li>previousVersion is the short name of the previous version</li>
+        <li>nextVersion is the short name of the next version</li>
+        <li>versionDescription is the description of the version</li>
+        <li>additions is the list of things added in this build (leave empty if none)</li>
+        <li>changes is the list of things changed in this build (leave empty if none)</li>
+        <li>fixes is the list of things fixed in this build (leave empty if none)</li>
+        <li>bugs is the list of known bugs in this build (leave empty if none)</li>
+        <li>media is the list of images with descriptions</li>
+        <li>videos is the list of links to videos</li>
+        <li>trivia is the list of facts</li>
+      </ul><br>
+      You can tag changelog entries using the following tags: &lt;irc&gt;, &lt;notch&gt;, &lt;code&gt;, &lt;social&gt;, &lt;spec&gt;, &lt;recreation&gt; and &lt;artificial&gt; <br>
+      You can tag screenshots using the following tags: &lt;ogscreenshot&gt; and  &lt;remakescreenshot&gt;<br><br>
+      You can submit your finished version files in our discord server.
+      A complete JSON should look something like this:
+      <div class="container my-5">
+        <h4 class="mb-3">Complete Example (contains text from minecraft.wiki)</h4>
+        <div class="code-container">
+          <button class="btn btn-sm btn-secondary copy-btn" onclick="copyCode()">Copy</button>
+          <pre><code class="language-json" id="codeBlock">{
+  "shortName": "c0.0.11a",
+  "fullName": "Classic 0.0.11a",
+  "releaseDate": "May 17, 2009",
+  "remakeUpdateDate": "",
+  "mainImage": "Classic_0.0.11a_Human.jpg",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.11a.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "",
+  "nextVersion": "c0.0.12a",
+  "versionDescription":
+          "This is a description &lt;br&gt; Thats how you make a new line &lt;br&gt;&lt;br&gt; Thats how you make 2 new lines",
+  "additions": [
+
+  ],
+  "changes": [
+
+  ],
+  "fixes": [
+    "Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;irc&gt; Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;notch&gt; Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;code&gt; Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;social&gt; Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;spec&gt; Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;recreation&gt; Fixed an issue with start and destroy functions making the game unplayable.",
+    "&lt;artificial&gt; Fixed an issue with start and destroy functions making the game unplayable."
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["Some screenshot", "Classic_0.0.11a_Human.jpg"],
+    ["&lt;ogscreenshot&gt; Tagged screenshot", "Classic_0.0.11a_Human.jpg"],
+    ["&lt;remakescreenshot&gt; Tagged screenshot", "Classic_0.0.11a_Human.jpg"]
+  ],
+  "videos": [
+    "https://example.com"
+  ],
+  "trivia": [
+
+  ]
+}</code></pre>
+        </div>
+      </div>
+
+      <h4>Sandbox</h4>
+      There's an available wiki sandbox so that you can see the changes you're making in real time.<br>
+      You can download it from <a class="downloadLink" href="https://tmrpwiki.github.io/WikiSandbox.zip">here</a> <br>
+      Please note that you need a live server running for the sandbox to work.
+      Here's how to set up that server:
+      <ol>
+        <li>Download and Install Visual Studio Code</li>
+        <li>Open Visual Studio code and go to File>Open Folder and choose the folder where you unzipped the downloaded zip file</li>
+        <li>Now head over to the Extensions tab, and install Live Server by Ritwick Dey</li>
+        <li>Once installed, click on the Go Live button in the bottom right corner of VS Code and you're done</li>
+
+      </ol><br>
+      You should edit base.json that's inside the Versions folder, and all images must be placed inside Resources/versionResources/ in order for them to load.
+    </div> <br>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  <script>
+    function copyCode() {
+      const code = document.getElementById("codeBlock").innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        console.log("Copied!");
+      });
+    }
+  </script>
+  <script src="JS/Versions.js"></script>
+  <script src="JS/SidebarPopulator.js"></script>
+</div>
+</body>
+</html>
