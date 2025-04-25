@@ -12,7 +12,7 @@
   "versionDescription":
           "c0.0.12a-dev3 was the third dev build for c0.0.12a in which this version introduced lava and some changes to water. [Please Verify the stuff on this page]",
   "additions": [
-    "Lava: <br> Has a translucent texture, and has simular flow mechanics to water. <br> Instead of being rendered as a full block it is instead rendered 1.5 pixels shorter than a standered block. <br> Player cannot move nearly as fast in this fluid, and moves much slower than water in the previous version."
+    "Lava: <br> Has a translucent texture, and has similar flow mechanics to water. <br> Instead of being rendered as a full block it is instead rendered 1.5 pixels shorter than a standard block. <br> Player cannot move nearly as fast in this fluid, and moves much slower than water in the previous version."
   
   ],
   "changes": [
