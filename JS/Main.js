@@ -21,8 +21,8 @@ function SetupPage(shortName, fullName, description, additions, changes, fixes, 
     document.querySelector(".shortVersion").innerHTML = shortName;
     document.querySelector(".releaseDate").innerHTML = "Release Date: "+releaseDate;
     document.querySelector(".remakeUpdate").innerHTML = "Last Remake Update: "+(remakeUpdateDate=="" ? "N/A" : remakeUpdateDate);
-    document.querySelector(".prevVer").innerHTML = "Previous Version: "+ (previousVersion == "" ? "Unknown" : '<a class=\'downloadLink\' href="version.html?ver='+previousVersion+'">'+previousVersion+'</a>');
-    document.querySelector(".nextVer").innerHTML = "Next Version: "+ (nextVersion == "" ? "Unknown" : '<a class=\'downloadLink\' href="version.html?ver='+nextVersion+'">'+nextVersion+'</a>');
+    document.querySelector(".prevVer").innerHTML = "Previous Version: "+ getVersionLink(previousVersion);
+    document.querySelector(".nextVer").innerHTML = "Next Version: "+ getVersionLink(nextVersion);
     document.querySelector(".infoBoxImage").src = "Resources/"+shortName+"/"+mainImage;
     for (let i in versionTags) {
         switch (versionTags[i]) {
@@ -162,4 +162,12 @@ function parseContent(content){
     content = content.replace("<code>", "<div class='ircTag'><img class='infoTagImage' src='Resources/creeper.png'> Verified by Code Difference</div>");
     content = content.replace("<notch>", "<div class='ircTag'><img class='infoTagImage' src='Resources/notch.png'> Word of Notch</div>");
     return content;
+}
+
+function getVersionLink(shortVersion){
+    if(shortVersion == "") return "Unknown";
+    if(versions.includes(shortVersion+".json")){
+        return '<a class=\'downloadLink\' href="version.html?ver='+shortVersion+'">'+shortVersion+'</a>';
+    }
+    return shortVersion;
 }

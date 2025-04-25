@@ -1,0 +1,39 @@
+{
+  "shortName": "c0.0.12a-dev",
+  "fullName": "Classic 0.0.12a Dev (Classic 0.0.11a Launcher)",
+  "releaseDate": "May 18, 2009",
+  "remakeUpdateDate": "",
+  "mainImage": "Classic_0.0.12a-dev.png",
+  "downloadMethod": "Mojang",
+  "downloadLink": "https://piston-data.mojang.com/v1/objects/3a799f179b6dcac5f3a46846d687ebbd95856984/client.jar",
+  "versionTags": ["dev", "wip"],
+  "previousVersion": "c0.0.11a",
+  "nextVersion": "c0.0.12a-dev2",
+  "versionDescription":
+          "c0.0.12a-dev is a version of Minecraft Classic that is found, and can be commonly confused for c0.0.11a. The difference between the two versions is the development of server code.",
+  "additions": [
+    "<code> Server development has started. <br> The code is rather basic and can only handle basic client connections and message sending."
+  ],
+  "changes": [
+
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<ogscreenshot> A small wooden house", "0.0.11a_House.png"],
+    ["<ogscreenshot> A sapling", "0.0.11a_Sapling.png"],
+    ["<ogscreenshot> A Screeshot taken of this version", "Classic_0.0.12a-dev.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "There has actually been some confusion with this version in the past as some thought that this was actually classic 0.0.11a. This has been proven to be false with the date of the files matching the date of this version being May 18th versus May 17th",
+    "The version number is still written as c0.0.11a, this is a common occurrence with many development builds."
+  
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "shortName": "c0.0.12a-dev3",
+  "fullName": "Classic 0.0.12a Dev-3",
+  "releaseDate": "May 19, 2009",
+  "remakeUpdateDate": "April 22, 2023",
+  "mainImage": "Classic_0.0.12a.jpg",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.12a-dev3.jar",
+  "versionTags": ["tmrp", "dev", "wip"],
+  "previousVersion": "c0.0.12a-dev2",
+  "nextVersion": "c0.0.12a",
+  "versionDescription":
+          "c0.0.12a-dev3 was the third dev build for c0.0.12a in which this version introduced lava and some changes to water. [Please Verify the stuff on this page]",
+  "additions": [
+    "Lava: <br> Has a translucent texture, and has simular flow mechanics to water. <br> Instead of being rendered as a full block it is instead rendered 1.5 pixels shorter than a standered block. <br> Player cannot move nearly as fast in this fluid, and moves much slower than water in the previous version."
+  
+  ],
+  "changes": [
+    "Water: <br> No longer has an opaque texture and doesn't render as a full block anymore. (Due to this shadows can not be seen on water anymore). <br> When a world is now generated, the water no longer quickly fills in from each of the sides of the world, but is now automatically filled in for each area at water level (Minus spots where the water could not flow in to)."
+
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+    "For the top right corner, typically the block that is being placed is shown there, however due to a bug only the sapling appears when selected and nothing else."
+
+  ],
+  "media": [
+    ["<ogscreenshot> A screenshot from this version", "Classic_0.0.12a.jpg"],
+    ["New Fluid Lava", "Lava_JE1.png"],
+    ["Changed Water Texture", "Water_JE1.png"],
+    ["<remakescreenshot> New Lava Lakes", "Re1.png"],
+    ["<remakescreenshot> Translucency of Lava", "Re2.png"],
+    ["<remakescreenshot> Translucency of Water", "Re3.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "This is the first version of Minecraft with naturally generating Lava Lakes!"
+  
+  ]
+}

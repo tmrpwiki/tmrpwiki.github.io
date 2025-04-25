@@ -1,0 +1,49 @@
+{
+  "shortName": "c0.0.12a-dev2",
+  "fullName": "Classic 0.0.12a Dev-2",
+  "releaseDate": "[Verify] May 18, 2009",
+  "remakeUpdateDate": "April 22, 2023",
+  "mainImage": "0.0.12a-dev2.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.12a-dev2.jar",
+  "versionTags": ["tmrp", "dev", "wip"],
+  "previousVersion": "c0.0.12a-dev",
+  "nextVersion": "c0.0.12a-dev3",
+  "versionDescription":
+          "c0.0.12a-dev2 was the second dev build for c0.0.12a in which this version introduced bedrock and early water mechanics. [Please Verify the stuff on this page]",
+  "additions": [
+    "Bedrock: <br> Unobtainable to the player. <br> Cannot be broken, placed against, or otherwise selected. <br> Surrounds the entire map on all four sides and starts at two blocks below ocean level. Bedrock is also seen at the bottom of the world.",
+    "Water: <br> Has an opaque texture and is rendered as a full block. This rendered awkwardly as this caused water to have shadows upon it. <br> Swimming mechanics are janky in this version as the player is able to swim quite fast in the water <br> Water is seen to be on all four sides of a level, and spreads to fill any empty space it can rather quickly.",
+    "World Border: <br> An infinite ocean now surrounds the entire map. It is now impossible to fall off the world. <br> Also, the water tiles on the edges of the world border are 'ghost' tiles and no water will actually flow from out of the world borders.",
+    "Pressing F will now toggle between four levels of render distance. There is no fog, so this does look a bit quirky.",
+    "Pressing N will generate a new level. There is no world generation screen so this happens instantaneously. Mobs will not get reset upon a level reset, so keep that in mind."
+  
+  ],
+  "changes": [
+    "New Terrain Generator: <br> Terrain is now seen to be more messy, with more bumps that are visible on the surface. <br> Terrain now generates in islands. <br> Dirt with access to sunlight will not become grass if it is below ocean level."
+
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<ogscreenshot> A screenshot from this version", "0.0.12a-dev2.png"],
+    ["New Block Bedrock", "Bedrock_JE1_BE1.png"],
+    ["New Fluid Water", "Water_(pre-release).png"],
+    ["<remakescreenshot> New Water flow Mechanics and World Border", "Re1.png"],
+    ["<remakescreenshot> Opaque Water up Close", "Re2.png"],
+    ["<remakescreenshot> Bedrock Shown in Game", "Re3.png"]
+  ],
+  "videos": [
+    "https://www.youtube.com/watch?v=jwgXo3LYKaU"
+
+  ],
+  "trivia": [
+    "This is a brief period in which shadows render on water when blocks are placed above. In the near future this will not occur due to Notch making water render on a new layer.",
+    "The terrain generation files can be found in c0.0.13a jar which is quite neat."
+  
+  ]
+}
