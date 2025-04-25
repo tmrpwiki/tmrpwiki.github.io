@@ -1,104 +1,125 @@
 function populate(){
 
-console.log("sdadas")
+    console.log("sdadas");
 
-if(preclassic.length > 0) {
-    for (let version in preclassic) {
-        fetch("../Versions/"+versions[version])
+    if (preclassic.length > 0) {
+        Promise.all(preclassic.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#preclassic").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#preclassic").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#preclassic").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#preclassic").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 
-if(classic.length > 0) {
-    for (let version in classic) {
-        fetch("../Versions/"+versions[version])
+    if (classic.length > 0) {
+        Promise.all(classic.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#classic").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#classic").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#classic").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#classic").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 
-if(indev.length > 0) {
-    for (let version in indev) {
-        fetch("../Versions/"+versions[version])
+    if (indev.length > 0) {
+        Promise.all(indev.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#indev").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#indev").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#indev").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#indev").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 
-if(infdev.length > 0) {
-    for (let version in infdev) {
-        fetch("../Versions/"+versions[version])
+    if (infdev.length > 0) {
+        Promise.all(infdev.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#infdev").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#infdev").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#infdev").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#infdev").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 
-if(alpha.length > 0) {
-    for (let version in alpha) {
-        fetch("../Versions/"+versions[version])
+    if (alpha.length > 0) {
+        Promise.all(alpha.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#alpha").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#alpha").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#alpha").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#alpha").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 
-if(beta.length > 0) {
-    for (let version in beta) {
-        fetch("../Versions/"+versions[version])
+    if (beta.length > 0) {
+        Promise.all(beta.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#beta").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#beta").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#beta").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#beta").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 
-if(release.length > 0) {
-    for (let version in release) {
-        fetch("../Versions/"+versions[version])
+    if (release.length > 0) {
+        Promise.all(release.map(version => fetch("../Versions/" + version)
             .then(response => response.json())
-            .then(data => {
-                document.querySelector("#release").innerHTML += '<li> <a href="version.html?ver='+data.shortName+'"><i class="bi bi-dot"></i> '+data.shortName+'</a></li>';
+        ))
+            .then(dataArray => {
+                dataArray.forEach(data => {
+                    document.querySelector("#release").innerHTML +=
+                        '<li><a href="version.html?ver=' + data.shortName +
+                        '"><i class="bi bi-dot"></i> ' + data.shortName + '</a></li>';
+                });
             })
             .catch(error => console.error('Error loading versions:', error));
+    } else {
+        document.querySelector("#release").innerHTML +=
+            '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
     }
-}
-else{
-    document.querySelector("#release").innerHTML += '<li><div class="empty"><i class="bi bi-ban"></i> Empty </div></li>';
-}
 }
 
 //random button
