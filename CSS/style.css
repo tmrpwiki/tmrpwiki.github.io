@@ -42,6 +42,8 @@ ul {
     background: #151515;
     color: white;
     padding: 10px;
+    left: 0;
+    top: 0;
 }
 .sidebar a {
     color: white;
@@ -49,6 +51,9 @@ ul {
     display: block;
     padding: 10px;
     transition: 0.25s;
+}
+.mobileSidebar {
+    background: #151515;
 }
 
 .sidebar a i{
@@ -246,37 +251,48 @@ ul {
     height: 20px;
 }
 
-.versionTagHolder{
+.versionTagHolder {
     width: 100%;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
-.versionTag{
+.versionTag {
     position: relative;
-    margin-left: calc(50% - 300px);
     background-image: url("../Resources/versionTag.png");
-    width: 600px;
-    height: 140px;
+    background-size: cover;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 600 / 140;
+    height: auto;
+    display: block;
+    overflow: hidden;
+    margin: 10px;
 }
-.versionTag img{
+.versionTag img {
     position: absolute;
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+    width: 16.66%;
+    height: auto;
+    top: 15%;
+    left: 20px;
     border-radius: 10px;
 }
-.versionTag .tagName{
+.versionTag .tagName {
     position: absolute;
-    margin-top: 15px;
-    margin-left: 130px;
-    margin-right: 20px;
-    font-size: 24px;
+    top: 15px;
+    left: calc(20px + 100px + 10px);
+    right: 20px;
+    font-size: clamp(8px, 2.5vw, 24px);
 }
-.versionTag .tagDescription{
+.versionTag .tagDescription {
     position: absolute;
-    margin-top: 55px;
-    margin-left: 130px;
-    margin-right: 20px;
+    top: 4em;
+    left: calc(20px + 100px + 10px);
+    right: 20px;
+    font-size: clamp(6px, 2vw, 16px);
 }
 .versionMedia{
     width: 100%;
@@ -311,5 +327,31 @@ pre {
     margin: 0;
     padding: 1rem;
     overflow-x: auto;
+}
+
+@media (max-width: 992px) {
+    .content {
+        margin-left: 5px;
+    }
+
+}
+@media (max-width: 1450px) {
+    .sideHolder {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .mainHolder {
+        width: 100%;
+    }
+
+    .infoBox {
+        position: static;
+        margin: auto;
+    }
+
 }
 

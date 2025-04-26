@@ -1,69 +1,123 @@
-<div class="sidebar">
-  <ul class="list-unstyled">
-    <li> <a href="index.html"><i class="bi bi-house-door-fill"></i> Home Page</a></li>
-    <li> <a href="index.html" id="randomVerButton"><i class="bi bi-shuffle"></i> Random Page</a></li>
+<!-- Desktop Sidebar -->
+<div class="d-none d-lg-block mobileSidebar p-3" style="width: 250px; position: fixed; height: 100vh; overflow-y: auto; margin: 0;">
+  <div class="sidebar">
+    <ul class="list-unstyled">
+      <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home Page</a></li>
+      <li><a href="index.html" class="randomVerButton"><i class="bi bi-shuffle"></i> Random Page</a></li>
+    </ul>
+    <label>Versions <div></div></label>
+    <ul class="list-unstyled">
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#preclassic" role="button" aria-expanded="false" aria-controls="preclassic" class="collapsed">
+          <i class="bi bi-list"></i> Pre-classic
+        </a>
+        <ul class="collapse nested" id="preclassic" style="list-style-type: none;"></ul>
+      </li>
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#classic" role="button" aria-expanded="false" aria-controls="classic" class="collapsed">
+          <i class="bi bi-list"></i> Classic
+        </a>
+        <ul class="collapse nested" id="classic" style="list-style-type: none;"></ul>
+      </li>
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#indev" role="button" aria-expanded="false" aria-controls="indev" class="collapsed">
+          <i class="bi bi-list"></i> Indev
+        </a>
+        <ul class="collapse nested" id="indev" style="list-style-type: none;"></ul>
+      </li>
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#infdev" role="button" aria-expanded="false" aria-controls="infdev" class="collapsed">
+          <i class="bi bi-list"></i> Infdev
+        </a>
+        <ul class="collapse nested" id="infdev" style="list-style-type: none;"></ul>
+      </li>
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#alpha" role="button" aria-expanded="false" aria-controls="alpha" class="collapsed">
+          <i class="bi bi-list"></i> Alpha
+        </a>
+        <ul class="collapse nested" id="alpha" style="list-style-type: none;"></ul>
+      </li>
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#beta" role="button" aria-expanded="false" aria-controls="beta" class="collapsed">
+          <i class="bi bi-list"></i> Beta
+        </a>
+        <ul class="collapse nested" id="beta" style="list-style-type: none;"></ul>
+      </li>
+      <li class="mb-2">
+        <a data-bs-toggle="collapse" href="#release" role="button" aria-expanded="false" aria-controls="release" class="collapsed">
+          <i class="bi bi-list"></i> Release
+        </a>
+        <ul class="collapse nested" id="release" style="list-style-type: none;"></ul>
+      </li>
+    </ul>
+    <label>Docs <div></div></label>
+    <ul style="list-style-type: none;">
+      <li><a href="creationGuide.html"><i class="bi bi-question-circle"></i> How to create a page</a></li>
+    </ul>
+  </div>
+</div>
 
-  </ul>
-  <label>Versions <div></div></label>
-  <ul class="list-unstyled">
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#preclassic" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Pre-classic
-      </a>
-      <ul class="collapse nested" id="preclassic" style="list-style-type: none;">
-
+<!-- Offcanvas Mobile Menu -->
+<div class="offcanvas offcanvas-start mobileSidebar d-lg-none" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="sidebar">
+      <!-- Same content copied for mobile -->
+      <ul class="list-unstyled">
+        <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home Page</a></li>
+        <li><a href="index.html" class="randomVerButton"><i class="bi bi-shuffle"></i> Random Page</a></li>
       </ul>
-    </li>
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#classic" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Classic
-      </a>
-      <ul class="collapse nested" id="classic" style="list-style-type: none;">
+      <label>Versions <div></div></label>
+      <ul class="list-unstyled">
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#preclassicMobile" role="button" aria-expanded="false" aria-controls="preclassicMobile" class="collapsed">
+            <i class="bi bi-list"></i> Pre-classic
+          </a>
+          <ul class="collapse nested" id="preclassicMobile" style="list-style-type: none;"></ul>
+        </li>
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#classicMobile" role="button" aria-expanded="false" aria-controls="classicMobile" class="collapsed">
+            <i class="bi bi-list"></i> Classic
+          </a>
+          <ul class="collapse nested" id="classicMobile" style="list-style-type: none;"></ul>
+        </li>
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#indevMobile" role="button" aria-expanded="false" aria-controls="indevMobile" class="collapsed">
+            <i class="bi bi-list"></i> Indev
+          </a>
+          <ul class="collapse nested" id="indevMobile" style="list-style-type: none;"></ul>
+        </li>
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#infdevMobile" role="button" aria-expanded="false" aria-controls="infdevMobile" class="collapsed">
+            <i class="bi bi-list"></i> Infdev
+          </a>
+          <ul class="collapse nested" id="infdevMobile" style="list-style-type: none;"></ul>
+        </li>
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#alphaMobile" role="button" aria-expanded="false" aria-controls="alphaMobile" class="collapsed">
+            <i class="bi bi-list"></i> Alpha
+          </a>
+          <ul class="collapse nested" id="alphaMobile" style="list-style-type: none;"></ul>
+        </li>
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#betaMobile" role="button" aria-expanded="false" aria-controls="betaMobile" class="collapsed">
+            <i class="bi bi-list"></i> Beta
+          </a>
+          <ul class="collapse nested" id="betaMobile" style="list-style-type: none;"></ul>
+        </li>
+        <li class="mb-2">
+          <a data-bs-toggle="collapse" href="#releaseMobile" role="button" aria-expanded="false" aria-controls="releaseMobile" class="collapsed">
+            <i class="bi bi-list"></i> Release
+          </a>
+          <ul class="collapse nested" id="releaseMobile" style="list-style-type: none;"></ul>
+        </li>
       </ul>
-    </li>
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#indev" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Indev
-      </a>
-      <ul class="collapse nested" id="indev" style="list-style-type: none;">
-
+      <label>Docs <div></div></label>
+      <ul style="list-style-type: none;">
+        <li><a href="creationGuide.html"><i class="bi bi-question-circle"></i> How to create a page</a></li>
       </ul>
-    </li>
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#infdev" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Infdev
-      </a>
-      <ul class="collapse nested" id="infdev" style="list-style-type: none;">
-
-      </ul>
-    </li>
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#alpha" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Alpha
-      </a>
-      <ul class="collapse nested" id="alpha" style="list-style-type: none;">
-
-      </ul>
-    </li>
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#beta" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Beta
-      </a>
-      <ul class="collapse nested" id="beta" style="list-style-type: none;">
-
-      </ul>
-    </li>
-    <li class="mb-2">
-      <a data-bs-toggle="collapse" href="#release" role="button" aria-expanded="false" aria-controls="dbA" class="collapsed">
-        <i class="bi bi-list"></i> Release
-      </a>
-      <ul class="collapse nested" id="release" style="list-style-type: none;">
-
-      </ul>
-    </li>
-  </ul>
-  <label>Docs <div></div></label>
-  <ul style="list-style-type: none;">
-    <li> <a href="creationGuide.html"><i class="bi bi-question-circle"></i> How to create a page</a></li>
-  </ul>
+    </div>
+  </div>
 </div>
