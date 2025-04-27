@@ -1,0 +1,36 @@
+{
+  "shortName": "c0.0.12a_01",
+  "fullName": "Classic 0.0.12a_01",
+  "releaseDate": "May 19, 2009",
+  "remakeUpdateDate": "Feb 16, 2023",
+  "mainImage": "12_01.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.12a_01.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "c0.0.12a",
+  "nextVersion": "c0.0.12a_02",
+  "versionDescription":
+          "c0.0.12a_01 was a version of Minecraft Classic that changed mob spawning upon new level generation.",
+  "additions": [
+
+  ],
+  "changes": [
+    "<irc> Mobs now get reset on a new level once again. "
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<ogscreenshot> Silly 3D Dinosaur made in this Version", "12_01.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "This is the first version of Minecraft to use an underscore in its name."
+
+  ]
+}

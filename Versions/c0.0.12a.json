@@ -1,0 +1,38 @@
+{
+  "shortName": "c0.0.12a",
+  "fullName": "Classic 0.0.12a",
+  "releaseDate": "May 19, 2009",
+  "remakeUpdateDate": "Feb 16, 2023",
+  "mainImage": "12dev.jpg",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.12a.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "c0.0.12a-dev3",
+  "nextVersion": "c0.0.12a_01",
+  "versionDescription":
+          "c0.0.12a was a version of Minecraft Classic that added all the features present in all three of its dev builds, and introduced changes to movement physics and world creation.",
+  "additions": [
+
+  ],
+  "changes": [
+    "<spec> World Generation <br> When a new level is generated a screen now shows up telling you the process in which the world is being generated. <br> Stating: 'Rasing', 'Carving', 'Watering', and 'Melting'. If a pre generated level is being loaded it will state 'Reading' instead. ",
+    "<spec> Fluid Movement <br> When moving around in water and lava it is now slower than it was in the previous dev builds. This movement is more realstic and the player can 'feel' more friction when moving in fluids."
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<ogscreenshot> c0.0.12a-dev3 Screenshot due to lack of Screenshots of c0.0.12a", "12dev.jpg"],
+    ["New World Generation Screen","1.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "Saplings can be placed next to water and lava in this version and any for many future versions and the fluid will not destory the sapling."
+
+  ]
+}
