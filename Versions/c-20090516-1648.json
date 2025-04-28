@@ -1,0 +1,38 @@
+{
+  "shortName": "c-20090516-1648",
+  "fullName": "Classic 2009516-16:48",
+  "releaseDate": "May 16, 2009",
+  "remakeUpdateDate": "April 26, 2025",
+  "mainImage": "1.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c-20090516-1648.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "c-20090516-1625",
+  "nextVersion": "c0.0.2a",
+  "versionDescription":
+          "c-20090516-1648 is a version of Minecraft Classic released 23 minutes after the last to fix issues with the mouse.",
+
+  "additions": [
+
+  ],
+  "changes": [
+  
+  ],
+  "fixes": [
+    "<irc> Mouse now works as intended."
+  
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<remakescreenshot> A Screenshot from this Recreation", "1.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "This is the last version of Minecraft to be unnumbered.* <br> *Some versions of Miencraft may have no or misleading version numbers either due to dev builds or the numbering system used. This will be commonly seen in Indev and Infdev."
+
+  ]
+}
