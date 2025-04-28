@@ -1,0 +1,42 @@
+{
+  "shortName": "c-20090516-1616",
+  "fullName": "Classic 2009516-16:16",
+  "releaseDate": "May 16, 2009",
+  "remakeUpdateDate": "April 26, 2023",
+  "mainImage": "1.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c-20090516-1616.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "c-20090516-1607",
+  "nextVersion": "c-20090516-1625",
+  "versionDescription":
+          "c-20090516-1616 is a version of Minecraft Classic released 9 minutes after the last to add mouse invert and fix mouse looking code.",
+  "additions": [
+    "<irc> Pressing 'Y' now swaps the mouse Y-axis."
+
+  ],
+  "changes": [
+    "<irc> Changed the mouse looking code."
+  
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+    "<irc> There were issues reported about bad mouse movement. <br> <artificial> The mouse is centered in the applet but still visable.",
+    "<irc> This version had texture issues <br> <recreation> The textures are all white.",
+    "<irc> Mouse invert did not work",
+    "<irc> FPS will drop when turning the camera"
+
+  ],
+  "media": [
+    ["<remakescreenshot> A Screenshot from this Recreation", "1.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "An old inaccurate recreation of this version orginally had pink textures and not white."
+
+  ]
+}
