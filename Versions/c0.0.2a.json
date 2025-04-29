@@ -13,7 +13,7 @@
           "c0.0.2a is a version of Minecraft Classic released around 17 minutes after the last to add a visual indicator for the version number. In addition other usefull features are shown in the gui in game.",
 
   "additions": [
-    "<irc> Debug Screen <br> <br> There is now a version number that is shown in quite large text on the top left corner of the screen. <br> <br> In addition to the version number, there is also a frame rate and chunk update counter. These are seen to be below the version number. <br> Previously, this would display to the developer console.",
+    "<irc> Debug Screen <br> There is now a version number that is shown in quite large text on the top left corner of the screen. <br> In addition to the version number, there is also a frame rate and chunk update counter. These are seen to be below the version number. Previously, this would display to the developer console.",
     "[Verify] Font <br> There is a font in Minecraft named default.gif that the game pulls to display its text."
 
   ],
