@@ -1,0 +1,44 @@
+{
+  "shortName": "c0.0.2a",
+  "fullName": "Classic 0.0.2a",
+  "releaseDate": "May 16, 2009",
+  "remakeUpdateDate": "April 26, 2025",
+  "mainImage": "1.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.2a.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "c-20090516-1648",
+  "nextVersion": "c0.0.3a",
+  "versionDescription":
+          "c0.0.2a is a version of Minecraft Classic released around 17 minutes after the last to add a visual indicator for the version number. In addition other usefull features are shown in the gui in game.",
+
+  "additions": [
+    "<irc> Debug Screen <br> <br> There is now a version number that is shown in quite large text on the top left corner of the screen. <br> <br> In addition to the version number, there is also a frame rate and chunk update counter. These are seen to be below the version number. <br> Previously, this would display to the developer console.",
+    "[Verify] Font <br> There is a font in Minecraft named default.gif that the game pulls to display its text."
+
+  ],
+  "changes": [
+  
+  ],
+  "fixes": [
+    "<irc> Mouse looking now works as intended"
+  
+  ],
+  "bugs": [
+    "<irc> While a key is pressed down and the game is moved out of (switch out of the game to the desktop) the game still registers that the key is being pressed. This bug still occurs in mondern Minecraft.",
+    "<irc> Some issues occured such as low sensitivity and crashing, and potentially a low FPS dependant on the player."
+
+  ],
+  "media": [
+    ["<remakescreenshot> A Screenshot from this Recreation", "1.png"],
+    ["<remakescreenshot> default.gif in the Files","default.gif"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "<irc> This was deemed 'relatively stable' by Notch.",
+    "<irc> This was the first version of Minecraft to have its code to be obfuscated."    
+
+  ]
+}
