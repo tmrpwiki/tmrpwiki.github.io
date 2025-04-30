@@ -44,6 +44,7 @@ ul {
     padding: 10px;
     left: 0;
     top: 0;
+    overflow-y: auto;
 }
 .sidebar a {
     color: white;
