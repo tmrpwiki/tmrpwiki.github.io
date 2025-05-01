@@ -1,0 +1,42 @@
+{
+  "shortName": "c0.0.3a",
+  "fullName": "Classic 0.0.3a",
+  "releaseDate": "May 16, 2009",
+  "remakeUpdateDate": "April 26, 2025",
+  "mainImage": "1.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c0.0.3a.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "c0.0.2a",
+  "nextVersion": "c0.0.9a",
+  "versionDescription":
+          "c0.0.3a is a version of Minecraft Classic released roughly an hour after the last version to add caves.",
+
+  "additions": [
+    "<irc> World Generation <br> Caves now generate randomly underneath the ground."
+
+  ],
+  "changes": [
+  
+  ],
+  "fixes": [
+  
+  ],
+  "bugs": [
+
+    "<irc> This version was very unstable and crashed for some players, and for others is caused the to get a white screen (Asus Eee).",
+    "<irc> Blocks can be placed inside the space that players are currently inside."
+  ],
+  "media": [
+    ["<remakescreenshot> A Screenshot from this Recreation", "1.png"],
+    ["<remakescreenshot> Caves in this Version:", "2.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "This techinally isn't the first time caves were introduced as the first iteration of the game 'Cave Game' used a form of cave spawning code.",
+    "While the Minecraft Recreation Project tries to be as close as possible for the recreations, the recreation for this version has not been tested on the Asus Eee to ensure it crashes."
+
+  ]
+}
