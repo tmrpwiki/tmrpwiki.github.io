@@ -12,7 +12,7 @@
   "versionDescription":
           "c0.0.12a-dev is a version of Minecraft Classic that is found, and can be commonly confused for c0.0.11a. The difference between the two versions is the development of server code.",
   "additions": [
-    "<code> Server development has started. <br> The code is rather basic and can only handle basic client connections and message sending."
+    "<code> Server development has started. <br> <indent>- The code is rather basic and can only handle basic client connections and message sending."
   ],
   "changes": [
 

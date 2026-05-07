@@ -18,7 +18,7 @@
 
   ],
   "fixes": [
-    "<irc> Fixed an issue with start and destroy functions making the game unplayable. <br> This essentially fixes the issues present in the previous version"
+    "<irc> Fixed an issue with start and destroy functions making the game unplayable. <br><indent>- This essentially fixes the issues present in the previous version"
   ],
   "bugs": [
 

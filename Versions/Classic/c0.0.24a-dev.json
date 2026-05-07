@@ -1,0 +1,42 @@
+{
+  "shortName": "c0.0.24a-dev",
+  "fullName": "Classic 0.0.24a Dev",
+  "releaseDate": "August 4, 2009",
+  "remakeUpdateDate": "April 6, 2025",
+  "mainImage": "c0.24-dev OG screenshot.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/blob/classic/c0.24-dev.jar",
+  "versionTags": ["tmrp", "dev"],
+  "previousVersion": "c0.0.23a_01",
+  "nextVersion": "c0.24-dev2",
+  "versionDescription":
+          "c0.24-dev is the first developer build for Classic 0.24_SURVIVAL_TEST known as 'Minecraft Resources Text'. It was shown on Notch's YouTube channel on August 4th, 2009.",
+  "additions": [
+    "<social>Breaking blocks now allows the player to pick up and place them, adding or removing them from hotbar. <br><indent>- There is no limit for the stack size, but one type of block can only be in one slot.<separation>",
+    "One-block deep lava layer was added at the bottom of the map at Y=1"
+  ],
+  "changes": [
+    "<social> Sky color has been changed from #7FCCFF to #99CCFF.",
+    "<spec> Removed the ability to spawn mobs by pressing G.",
+    "<social> Removed creative mode."
+  ],
+  "fixes": [
+    "Sand and gravel now properly fall through liquids."
+  ],
+  "bugs": [
+    "Placing blocks at build height consumes them in the hotbar without being placed.",
+    "Middle-clicking on a block A while holding a stack of some other block B replaces that block B in hotbar with the targeted block A while retaining it's quantity."
+  ],
+  "media": [
+    ["<ogscreenshot> Screenshot from the original video", "c0.24-dev OG screenshot.png"],
+    ["<remakescreenshot> Recreation", "c0.24-dev recreation screenshot.png"],
+    ["<remakescreenshot> Lava sea at Y=1. Lava blocks can be removed using sand or gravel.", "c0.24-dev lava sea.png"]
+  ],
+  "videos": [
+    "https://www.youtube.com/watch?v=srHTyTU2ejw"
+  ],
+  "trivia": [
+    "Currently the number 1 in stacks of 1 block is rendered. This gets changed in c0.24-dev5.",
+    "While the full release is labeled '0.24_SURVIVAL_TEST', all of its developer builds are labeled just '0.24'."
+  ]
+}

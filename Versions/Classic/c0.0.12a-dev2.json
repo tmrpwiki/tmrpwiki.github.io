@@ -12,15 +12,15 @@
   "versionDescription":
           "c0.0.12a-dev2 was the second dev build for c0.0.12a in which this version introduced bedrock and early water mechanics. [Please Verify the stuff on this page]",
   "additions": [
-    "Bedrock: <br> Unobtainable to the player. <br> Cannot be broken, placed against, or otherwise selected. <br> Surrounds the entire map on all four sides and starts at two blocks below ocean level. Bedrock is also seen at the bottom of the world.",
-    "Water: <br> Has an opaque texture and is rendered as a full block. This rendered awkwardly as this caused water to have shadows upon it. <br> Swimming mechanics are janky in this version as the player is able to swim quite fast in the water <br> Water is seen to be on all four sides of a level, and spreads to fill any empty space it can rather quickly.",
-    "World Border: <br> An infinite ocean now surrounds the entire map. It is now impossible to fall off the world. <br> Also, the water tiles on the edges of the world border are 'ghost' tiles and no water will actually flow from out of the world borders.",
+    "Bedrock: <br> <indent> - Unobtainable to the player. <br> <indent> - Cannot be broken, placed against, or otherwise selected. <br> <indent>- Surrounds the entire map on all four sides and starts at two blocks below ocean level. Bedrock is also seen at the bottom of the world.",
+    "Water: <br> <indent> - Has an opaque texture and is rendered as a full block. This rendered awkwardly as this caused water to have shadows upon it. <br> <indent> - Swimming mechanics are janky in this version as the player is able to swim quite fast in the water <br> <indent> - Water is seen to be on all four sides of a level, and spreads to fill any empty space it can rather quickly.",
+    "World Border: <br> <indent> - An infinite ocean now surrounds the entire map. It is now impossible to fall off the world. <br> <indent> - Also, the water tiles on the edges of the world border are 'ghost' tiles and no water will actually flow from out of the world borders.",
     "Pressing F will now toggle between four levels of render distance. There is no fog, so this does look a bit quirky.",
     "Pressing N will generate a new level. There is no world generation screen so this happens instantaneously. Mobs will not get reset upon a level reset, so keep that in mind."
   
   ],
   "changes": [
-    "New Terrain Generator: <br> Terrain is now seen to be more messy, with more bumps that are visible on the surface. <br> Terrain now generates in islands. <br> Dirt with access to sunlight will not become grass if it is below ocean level."
+    "New Terrain Generator: <br> <indent> - Terrain is now seen to be more messy, with more bumps that are visible on the surface. <br> <indent> - Terrain now generates in islands. <br> <indent> - Dirt with access to sunlight will not become grass if it is below ocean level."
 
   ],
   "fixes": [

@@ -1,0 +1,41 @@
+{
+  "shortName": "pc-131655",
+  "fullName": "pre-Classic 131655",
+  "releaseDate": "May 13, 2009 at 16:55",
+  "remakeUpdateDate": "March 24, 2024",
+  "mainImage": "pc-131655-1.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/pre-classic/pc-131655.jar",
+  "versionTags": ["tmrp", "wip"],
+  "previousVersion": "pc-131648",
+  "nextVersion": "pc-131951",
+  "versionDescription":
+          "pc-131655 is the very first official version of Minecraft! Some consider it to be the very first version.",
+  "additions": [
+
+  ],
+  "changes": [
+    "<irc> The size of the chunks was changed from 8x8 to 16x16, which led to faster loading of chunks, and possibly an increase in fps."
+  ],
+  "fixes": [
+
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<ogscreenshot> Cave", "pc-131655-2.png"],
+    ["<ogscreenshot> Unloaded chunks", "pc-131655-3.png"],
+    ["<ogscreenshot> The player fell behind the card", "pc-131655-4.png"],
+    ["<ogscreenshot> The world from above with random teleportation", "pc-131655-5.png"],
+    ["<remakescreenshot> The world", "pc-131655-6.png"],
+    ["<remakescreenshot> Cave", "pc-131655-7.png"]
+  ],
+  "videos": [
+    "https://www.youtube.com/watch?v=eUkZNk90rbQ - YouTube Video",
+    "https://www.youtube.com/watch?v=o4m1YSgmnVg - YouTube Video Recreation"
+  ],
+  "trivia": [
+    "<notch> <social> This version is the only one among all the pre-Classic that has the names: Cave Game Tech Test, and Cave Game Tech Demo"
+  ]
+}

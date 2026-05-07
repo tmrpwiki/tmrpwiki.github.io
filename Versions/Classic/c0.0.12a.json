@@ -15,8 +15,8 @@
 
   ],
   "changes": [
-    "<spec> World Generation <br> When a new level is generated a screen now shows up telling you the process in which the world is being generated. <br> Stating: 'Rasing', 'Carving', 'Watering', and 'Melting'. If a pre generated level is being loaded it will state 'Reading' instead. ",
-    "<spec> Fluid Movement <br> When moving around in water and lava it is now slower than it was in the previous dev builds. This movement is more realstic and the player can 'feel' more friction when moving in fluids."
+    "<spec> World Generation <br> <indent> - When a new level is generated a screen now shows up telling you the process in which the world is being generated. <br> <indent> - Stating: 'Rasing', 'Carving', 'Watering', and 'Melting'. If a pre generated level is being loaded it will state 'Reading' instead. ",
+    "<spec> Fluid Movement <br> <indent> - When moving around in water and lava it is now slower than it was in the previous dev builds. This movement is more realstic and the player can 'feel' more friction when moving in fluids."
   ],
   "fixes": [
   

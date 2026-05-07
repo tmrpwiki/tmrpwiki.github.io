@@ -1,0 +1,40 @@
+{
+  "shortName": "c-20090516-1625",
+  "fullName": "Classic 2009516-16:25",
+  "releaseDate": "May 16, 2009",
+  "remakeUpdateDate": "April 26, 2025",
+  "mainImage": "1.png",
+  "downloadMethod": "TMRP",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/refs/heads/classic/c-20090516-1625.jar",
+  "versionTags": ["tmrp", "dangerous", "wip"],
+  "previousVersion": "c-20090516-1616",
+  "nextVersion": "c-20090516-1648",
+  "versionDescription":
+          "c-20090516-1625 is a version of Minecraft Classic released 9 minutes after the last to fix bugs present in the previous version. <br> <br> *Note that this is tagged as a 'Dangerous' version as the game is laggy and/or has a low framemate making this version less playable over others.",
+
+  "additions": [
+
+  ],
+  "changes": [
+  
+  ],
+  "fixes": [
+    "<irc> Texture issues have been fixed.",
+    "<irc> Mouse invert now works as intended."
+  
+  ],
+  "bugs": [
+    "<irc> Mouse has quite low sensitivity.",
+    "<irc> Low fps was reported.",
+    "<irc> Potential issues with mouse looking."
+  ],
+  "media": [
+    ["<remakescreenshot> A Screenshot from this Recreation", "1.png"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+
+  ]
+}

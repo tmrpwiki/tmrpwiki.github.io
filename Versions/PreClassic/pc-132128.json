@@ -1,0 +1,41 @@
+{
+  "shortName": "pc-132128",
+  "fullName": "pre-Classic 132128",
+  "releaseDate": "May 13, 2009 at 21:28",
+  "remakeUpdateDate": "N/A",
+  "mainImage": "pc-132128-1.png",
+  "downloadMethod": "Mojang",
+  "downloadLink": "https://github.com/nasko222/the-minecraft-recreation-project/raw/794fe4bf688dc21a25a1fa806100f6689d5ccbd7/pc-131951.jar",
+  "versionTags": ["omni", "wip"],
+  "previousVersion": "pc-132011",
+  "nextVersion": "pc-152225",
+  "versionDescription":
+          "pc-132128 is the trird official version of Minecraft.",
+  "additions": [
+    "Added first mob",
+    "He's about the size of a player. He walks without a trace, jumps, comes into contact with blocks and may fall behind the map.",
+    "The texture of the Mob was taken from another Notch game, ZombieTown."
+  ],
+  "changes": [
+
+  ],
+  "fixes": [
+
+  ],
+  "bugs": [
+
+  ],
+  "media": [
+    ["<ogscreenshot> A photo from the very first saved world.", "pc-132128-2.png"],
+    ["<ogscreenshot> The world from above", "pc-132128-3.png"],
+    ["Mob Animation", "pc-132128-4.gif"]
+  ],
+  "videos": [
+
+  ],
+  "trivia": [
+    "<social> pc-132011 is the second saved version of Minecraft!",
+    "<social> The very first saved world is dedicated to this version.",
+    "In the future, the Mob model will be used for the player, and will become the main character of the game."
+  ]
+}

@@ -5,17 +5,17 @@ LoadDB();
 
 function LoadDB(){
     for (let version in versions) {
-        fetch("../Versions/"+versions[version])
+        fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(versions[version])+"/"+versions[version])
             .then(response => response.json())
             .then(data => {
                 if(data.shortName != loadedVersion) return;
-                SetupPage(data.shortName, data.fullName, data.versionDescription, data.additions, data.changes, data.fixes, data.bugs, data.releaseDate, data.mainImage, data.downloadMethod, data.downloadLink, data.versionTags, data.media, data.previousVersion, data.nextVersion, data.trivia, data.remakeUpdateDate, data.videos);
+                SetupPage(versions[version], data.shortName, data.fullName, data.versionDescription, data.additions, data.changes, data.fixes, data.bugs, data.releaseDate, data.mainImage, data.downloadMethod, data.downloadLink, data.versionTags, data.media, data.previousVersion, data.nextVersion, data.trivia, data.remakeUpdateDate, data.videos);
             })
             .catch(error => console.error('Error loading versions:', error));
     }
 }
 
-function SetupPage(shortName, fullName, description, additions, changes, fixes, bugs, releaseDate, mainImage, downloadMethod, downloadLink, versionTags, media, previousVersion, nextVersion, trivia, remakeUpdateDate, videos) {
+function SetupPage(fileName, shortName, fullName, description, additions, changes, fixes, bugs, releaseDate, mainImage, downloadMethod, downloadLink, versionTags, media, previousVersion, nextVersion, trivia, remakeUpdateDate, videos) {
     document.querySelector(".versionTitle").innerHTML = parseContent(fullName);
     document.querySelector(".versionDescription").innerHTML = description;
     document.querySelector(".shortVersion").innerHTML = shortName;
@@ -23,7 +23,7 @@ function SetupPage(shortName, fullName, description, additions, changes, fixes, 
     document.querySelector(".remakeUpdate").innerHTML = "Last Remake Update: "+(remakeUpdateDate=="" ? "N/A" : remakeUpdateDate);
     document.querySelector(".prevVer").innerHTML = "Previous Version: "+ getVersionLink(previousVersion);
     document.querySelector(".nextVer").innerHTML = "Next Version: "+ getVersionLink(nextVersion);
-    document.querySelector(".infoBoxImage").src = "Resources/"+shortName+"/"+mainImage;
+    document.querySelector(".infoBoxImage").src = "Resources/"+GetResourcesFolderNameBasedOnEra(fileName)+"/"+shortName+"/"+mainImage;
     for (let i in versionTags) {
         switch (versionTags[i]) {
             case "dev":
@@ -134,7 +134,7 @@ function SetupPage(shortName, fullName, description, additions, changes, fixes, 
             let description = media[item][0];
             let image = media[item][1];
             content += '<div class="versionMediaItem">';
-            content += '<img class="versionMediaImage" src="Resources/'+shortName+'/'+ image +'">';
+            content += '<img class="versionMediaImage" src="Resources/'+GetResourcesFolderNameBasedOnEra(fileName)+'/'+shortName+'/'+ image +'">';
             content += '<div class="versionMediaDescription">'+parseContent(description)+'</div>';
             content += '</div>';
         }
@@ -151,16 +151,28 @@ function SetupPage(shortName, fullName, description, additions, changes, fixes, 
     }
 }
 
+
+function GetResourcesFolderNameBasedOnEra(fileName){
+    if(preclassic.includes(fileName)) return "PreClassic";
+    if(classic.includes(fileName)) return "Classic";
+    if(indev.includes(fileName)) return "Indev";
+    if(infdev.includes(fileName)) return "Infdev";
+    if(alpha.includes(fileName)) return "Alpha";
+    if(beta.includes(fileName)) return "Beta";
+    return "Release";
+}
 function parseContent(content){
-    content = content.replace("<spec>", "<div class='speculationTag'><img class='infoTagImage' src='Resources/crying_obsidian.png'> Speculation</div>");
-    content = content.replace("<irc>", "<div class='ircTag'><img class='infoTagImage' src='Resources/book_and_quill.png'> IRC Logs</div>");
-    content = content.replace("<artificial>", "<div class='artificialTag'><img class='infoTagImage' src='Resources/command_block.png'> Artificial Change</div>");
-    content = content.replace("<recreation>", "<div class='recreationTag'><img class='infoTagImage' src='Resources/rainbow_dragon.png'> Recreated Graphics</div>");
-    content = content.replace("<ogscreenshot>", "<div class='ogTag'><img class='infoTagImage' src='Resources/11a.png'> OG Screenshot</div>");
-    content = content.replace("<remakescreenshot>", "<div class='remakeTag'><img class='infoTagImage' src='Resources/pre4-dev.png'> Recreated Screenshot</div>");
-    content = content.replace("<social>", "<div class='ircTag'><img class='infoTagImage' src='Resources/lalalalava.png'> Other Social Media</div>");
-    content = content.replace("<code>", "<div class='ircTag'><img class='infoTagImage' src='Resources/creeper.png'> Verified by Code Difference</div>");
-    content = content.replace("<notch>", "<div class='ircTag'><img class='infoTagImage' src='Resources/notch.png'> Word of Notch</div>");
+    content = content.replaceAll("<spec>", "<div class='speculationTag'><img class='infoTagImage' src='Resources/crying_obsidian.png'> Speculation</div>");
+    content = content.replaceAll("<irc>", "<div class='ircTag'><img class='infoTagImage' src='Resources/book_and_quill.png'> IRC Logs</div>");
+    content = content.replaceAll("<artificial>", "<div class='artificialTag'><img class='infoTagImage' src='Resources/command_block.png'> Artificial Change</div>");
+    content = content.replaceAll("<recreation>", "<div class='recreationTag'><img class='infoTagImage' src='Resources/rainbow_dragon.png'> Recreated Graphics</div>");
+    content = content.replaceAll("<ogscreenshot>", "<div class='ogTag'><img class='infoTagImage' src='Resources/11a.png'> OG Screenshot</div>");
+    content = content.replaceAll("<remakescreenshot>", "<div class='remakeTag'><img class='infoTagImage' src='Resources/pre4-dev.png'> Recreated Screenshot</div>");
+    content = content.replaceAll("<social>", "<div class='ircTag'><img class='infoTagImage' src='Resources/lalalalava.png'> Other Social Media</div>");
+    content = content.replaceAll("<code>", "<div class='ircTag'><img class='infoTagImage' src='Resources/creeper.png'> Verified by Code Difference</div>");
+    content = content.replaceAll("<notch>", "<div class='ircTag'><img class='infoTagImage' src='Resources/notch.png'> Word of Notch</div>");
+    content = content.replaceAll("<indent>", "<div class='indent'></div>");
+    content = content.replaceAll("<separation>", "<div class='separation'></div>");
     return content;
 }
 

@@ -1,13 +1,11 @@
 function populate() {
-    console.log("sdadas");
-
     const insertHTML = (selector, html) => {
         document.querySelector(selector).innerHTML += html;
         document.querySelector(selector+"Mobile").innerHTML += html;
     };
 
     if (preclassic.length > 0) {
-        Promise.all(preclassic.map(version => fetch("../Versions/" + version)
+        Promise.all(preclassic.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -20,7 +18,7 @@ function populate() {
     }
 
     if (classic.length > 0) {
-        Promise.all(classic.map(version => fetch("../Versions/" + version)
+        Promise.all(classic.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -33,7 +31,7 @@ function populate() {
     }
 
     if (indev.length > 0) {
-        Promise.all(indev.map(version => fetch("../Versions/" + version)
+        Promise.all(indev.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -46,7 +44,7 @@ function populate() {
     }
 
     if (infdev.length > 0) {
-        Promise.all(infdev.map(version => fetch("../Versions/" + version)
+        Promise.all(infdev.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -59,7 +57,7 @@ function populate() {
     }
 
     if (alpha.length > 0) {
-        Promise.all(alpha.map(version => fetch("../Versions/" + version)
+        Promise.all(alpha.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -72,7 +70,7 @@ function populate() {
     }
 
     if (beta.length > 0) {
-        Promise.all(beta.map(version => fetch("../Versions/" + version)
+        Promise.all(beta.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -85,7 +83,7 @@ function populate() {
     }
 
     if (release.length > 0) {
-        Promise.all(release.map(version => fetch("../Versions/" + version)
+        Promise.all(release.map(version => fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(version)+"/" + version)
             .then(response => response.json())))
             .then(dataArray => {
                 dataArray.forEach(data => {
@@ -101,7 +99,7 @@ function populate() {
 // random button
 if (versions.length > 0) {
     version = Math.floor(Math.random() * versions.length)
-    fetch("../Versions/" + versions[version])
+    fetch("../Versions/"+GetResourcesFolderNameBasedOnEra(versions[version])+"/" + versions[version])
         .then(response => response.json())
         .then(data => {
             let buttons = document.querySelectorAll(".randomVerButton");
@@ -110,4 +108,13 @@ if (versions.length > 0) {
             });
         })
         .catch(error => console.error('Error loading versions:', error));
+}
+function GetResourcesFolderNameBasedOnEra(fileName){
+    if(preclassic.includes(fileName)) return "PreClassic";
+    if(classic.includes(fileName)) return "Classic";
+    if(indev.includes(fileName)) return "Indev";
+    if(infdev.includes(fileName)) return "Infdev";
+    if(alpha.includes(fileName)) return "Alpha";
+    if(beta.includes(fileName)) return "Beta";
+    return "Release";
 }
